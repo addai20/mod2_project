@@ -1,2 +1,16 @@
-<h1>MealPlans#show</h1>
-<p>Find me in app/views/meal_plans/show.html.erb</p>
+<h1><%=@mealplan.name.capitalize%></h1>
+<br>
+<h2> All Meals in This Plan:</h2>
+<ul>
+  <%MpMeal.all.each do |mpm| %>
+  <% if mpm.mp_id == @mealplan.id%>
+  <%Meal.all.each do |m| %>
+  <% if m.id == mpm.meal_id%>
+  <li><% m.name.capitalize%></li>
+  </ul>
+  <%end %>
+  <%end %>
+<%end %>
+<%end %>
+
+<!-- This should work in theory!!! -->

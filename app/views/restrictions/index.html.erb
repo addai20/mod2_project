@@ -1,1 +1,6 @@
 <h1>Restrictions</h1>
+<% Restriction.all.each do |restriction|%>
+<ul>
+  <li><%=restriction.name.capitalize%></li>
+</ul>
+<%end%>
