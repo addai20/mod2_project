@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  get 'restrictions/index'
-  get 'restrictions/show'
-  get 'meal_restrictions/index'
-  get 'meals/index'
-  get 'meals/show'
-  get 'mp_meals/index'
-  get 'meal_plans/index'
-  get 'meal_plans/show'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    resources :meal_plans, only: [:index, :show]
+    resources :meal_restrictions, only: [:index]
+    resources :meals, only: [:index, :show]
+    resources :mp_meals, only: [:index]
+    resources :restrictions, only: [:index, :show]
 end
