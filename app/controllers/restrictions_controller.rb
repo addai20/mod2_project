@@ -4,5 +4,6 @@ class RestrictionsController < ApplicationController
   end
 
   def show
+    @restriction = Restriction.find(params[:id])
   end
 end

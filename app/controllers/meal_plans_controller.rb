@@ -4,5 +4,6 @@ class MealPlansController < ApplicationController
   end
 
   def show
+    @mealplan = MealPlan.find(params[:id])
   end
 end
