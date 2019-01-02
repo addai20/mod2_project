@@ -9,7 +9,6 @@ class MealsController < ApplicationController
 
   def new
     @meal = Meal.new
-    @meal.save
   end
 
   def create
@@ -25,4 +24,20 @@ class MealsController < ApplicationController
       :name
     )
   end
+
+  # def strong_params
+  #   params.require(:meal, :restriction, :meal_restriction).permit(
+  #     :name,
+  #     :restriction_id,
+  #     :meal_id
+  #   )
+  # end
 end
+
+# def strong_params
+#   params.require(:meal, :restriction, :meal_restriction).permit(
+#     :name,
+#     :restriction_id,
+#     :meal_id
+#   )
+# end
