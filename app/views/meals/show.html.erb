@@ -1,27 +1,14 @@
+<ul>
 <h1><%=@meal.name.capitalize%></h1>
 <br>
 <h2>Safe for:</h2>
-<ul>
   <%MealRestriction.all.each do |mr|%>
   <% if mr.meal_id == @meal.id %>
   <%Restriction.all.each do |rest|%>
   <% if rest.id == mr.restriction_id%>
-  <li><%=rest.name.capitalize %></li>
+  <li><%=link_to "#{rest.name.capitalize}", restriction_path(rest) %></li>
+  <%end %>
+  <%end %>
+<%end %>
+<%end %>
 </ul>
-  <%end %>
-  <%end %>
-<%end %>
-<%end %>
-
-<!-- ######
-
-#iterate through all restrictions
-Restriction.all.each do |rest|
-
-#if restriction id matches restriction_id of mr ..
-if rest.id == mr.restriction_id
-  rest.name
-
-  end
-
-  end -->

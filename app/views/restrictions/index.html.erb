@@ -1,6 +1,6 @@
 <h1>Restrictions</h1>
 <% Restriction.all.each do |restriction|%>
 <ul>
-  <li><%=restriction.name.capitalize%></li>
+  <li><%=link_to "#{restriction.name.capitalize}", restriction_path(restriction)%></li>
 </ul>
 <%end%>

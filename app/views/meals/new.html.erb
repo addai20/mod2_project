@@ -1,0 +1,7 @@
+<h1>Create new meal</h1>
+<%= form_for(@meal) do |f|%>
+<%=f.label :name%> <br>
+<%=f.text_field :name%><br>
+<%=f.submit "Make a new meal" %>
+<%= f.collection_select(:restriction_id, Restriction.all, :id, :name, {:prompt => "Please choose as many that apply"}, {:multiple => true}) %>
+<% end%>
