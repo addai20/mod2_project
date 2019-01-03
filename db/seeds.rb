@@ -23,24 +23,6 @@ mp5 = MealPlan.create(name: "two weeks to live")
 mp6 = MealPlan.create(name: "cheeseburgers")
 mp7 = MealPlan.create(name: "veggies")
 
-#mp_meals
-    #TEMPLATE
-# create_table "mp_meals", force: :cascade do |t|
-#   t.integer "mp_id"
-#   t.integer "meal_id"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
-
-mpM1 = MpMeal.create(mp_id: 1, meal_id: 8)
-mpM2 = MpMeal.create(mp_id: 2, meal_id: 1)
-mpM3 = MpMeal.create(mp_id: 2, meal_id: 1)
-mpM4 = MpMeal.create(mp_id: 3, meal_id: 8)
-mpM5 = MpMeal.create(mp_id: 4, meal_id: 5)
-mpM6 = MpMeal.create(mp_id: 5, meal_id: 2)
-mpM7 = MpMeal.create(mp_id: 6, meal_id: 6)
-
-
 #meals
 pizza = Meal.create(name: "pizza")
 dumpling = Meal.create(name: "dumplings")
@@ -72,3 +54,14 @@ mr7 = MealRestriction.create(meal_id: 5, restriction_id: 3)
 mr8 = MealRestriction.create(meal_id: 6, restriction_id: 3)
 mr9 = MealRestriction.create(meal_id: 7, restriction_id: 3)
 mr9 = MealRestriction.create(meal_id: 7, restriction_id: 4)
+
+
+#mp_meals
+mpM1 = MpMeal.create(mp_id: 1, meal_id: 8)
+byebug
+mpM2 = MpMeal.create(mp_id: 2, meal_id: 1)
+mpM3 = MpMeal.create(mp_id: 2, meal_id: 1)
+mpM4 = MpMeal.create(mp_id: 3, meal_id: 8)
+mpM5 = MpMeal.create(mp_id: 4, meal_id: 5)
+mpM6 = MpMeal.create(mp_id: 5, meal_id: 2)
+mpM7 = MpMeal.create(mp_id: 6, meal_id: 6)
