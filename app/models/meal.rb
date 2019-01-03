@@ -7,7 +7,7 @@ class Meal < ApplicationRecord
 
   def assign_restrictions(array_ids)
    array_ids.each do |rest|
-     byebug
+     # byebug
      MealRestriction.create(rest.id, meal_id)
    end
  end
