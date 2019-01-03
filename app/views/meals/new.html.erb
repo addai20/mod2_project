@@ -7,5 +7,5 @@
 <br>
 <%= f.collection_select(:id, Restriction.all, :id, :name, {:prompt => "Please choose as many that apply"}, {:multiple => true}) %><br>
 <br>
-<%=f.submit "Make a new meal" %><br>
+<%=f.submit "Save meal" %><br>
 <% end%>

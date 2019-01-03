@@ -12,16 +12,21 @@ class MealsController < ApplicationController
   end
 
   def create
-    @meal = Meal.create(strong_params)
+    array_ids = []
+    @meal = Meal.create(name: strong_params[:name])
+    array_ids << @meal[:restriction_id]
+    array_ids.flatten
     @meal.save
+    @meal.assign_restrictions(array_ids)
     redirect_to meal_path(@meal)
+
   end
 
   private
 
   def strong_params
     params.require(:meal).permit(
-      :name
+      :name, restriction_id: []
     )
   end
 
