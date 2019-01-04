@@ -1,5 +1,7 @@
 <ul>
   <h1><%=@restriction.name.capitalize%></h1>
+
+  <p><%= @restriction.description %></p>
   <br>
   <%MealRestriction.all.each do |mr|%>
   <% if mr.restriction_id == @restriction.id %>
