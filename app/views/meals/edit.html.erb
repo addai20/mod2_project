@@ -1,0 +1,7 @@
+<h1>Edit the Restriction: <%=@restriction.name%></h1>
+<%=form_for(@meal_restriction) do |f|%>
+<%=f.label :meal_restriction%>
+<%=f.collection_select %>
+<%= %>
+<%= %>
+<%= %>
