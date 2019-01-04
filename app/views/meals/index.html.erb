@@ -4,6 +4,8 @@
   <li><%=link_to "#{meal.name.capitalize}", meal_path(meal)%></li>
 <%end%>
 </ul>
+<%= link_to new_meal_path do %>New Meal<% end %>
+<br>
 <br>
 <%= link_to 'Home', root_path %>
 <%= link_to 'All Meals', meals_path %>
