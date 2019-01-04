@@ -34,13 +34,13 @@ hamburger = Meal.create(name: "hamburger")
 salad = Meal.create(name: "salad")
 
 #restrictions
-dairy = Restriction.create(name: "dairy")
-gluten = Restriction.create(name: "gluten")
-nut = Restriction.create(name: "tree nuts")
-kosher = Restriction.create(name: "kosher")
-halal = Restriction.create(name: "Halal")
-vegetarian = Restriction.create(name: "vegetarian")
-vegan = Restriction.create(name: "vegan")
+dairy = Restriction.create(name: "dairy", description: "Dairy-free diets do not include any dairy products, including milk or cheese.")
+gluten = Restriction.create(name: "gluten", description: "Gluten-free diets do not include anything made with wheat, barley, rye, and oats.")
+nut = Restriction.create(name: "tree nuts", description: "Nut-free diets do not include any peanuts or tree nuts, including almonds and pecans.")
+kosher = Restriction.create(name: "kosher", description: "Kosher diets are extremely strict, including how the animals are prepared. Shellfish and crustaceans are not on the list and no dish can contain both meat and dairy. Meat and dairy must also not be prepared using the same pans, dishes, or utensils.")
+halal = Restriction.create(name: "Halal", description: "Halal diets are extremely strict, including how the animals are prepared. Food items not included in a halal diet include pigs, carnivorous animals, animal products not supplied by a halal slaughtered animal, and alchohol.")
+vegetarian = Restriction.create(name: "vegetarian", description: "Vegetarian diets are not as strict as vegan, though they also do not include any animal products, and may include food derived from animals.")
+vegan = Restriction.create(name: "vegan", description: "Vegan diets do not include any animal products or food derived from animals, such as eggs, dairy, and honey.")
 
 #meal_restrictions
 
