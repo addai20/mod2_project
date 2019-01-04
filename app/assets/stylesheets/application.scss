@@ -17,6 +17,11 @@
  // @import "bootstrap-sprockets";
  // @import "bootstrap";
 
+ @font-face {
+   font-family: "namskout";
+   src: url('/assets/namskout');
+ }
+
  body {
    background-image: url(https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg);
    background-size: cover;
@@ -37,24 +42,55 @@
   background: rgba(204, 204, 204, 0.05);
 }
  p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "namskout", Times, serif;
   color: White;
 }
  a {
-    font-family: "Times New Roman", Times, serif;
-  color: White;
+   font-family: "namskout", Times, serif;
+   color: White;
+   font-size: 21.5px;
+}
+
+//  .div {
+//    font-family: "namskout", Times, serif;
+//    color: White;
+//    font-size: 21.5px;
+//    text-align: center;
+// }
+ label {
+   font-family: "namskout", Times, serif;
+   color: White;
+   font-size: 15px;
+}
+ li {
+   font-family: "namskout", Times, serif;
+   color: White;
 }
 
 h1 {
- font-family: "Times New Roman", Times, serif;
+ font-family: "namskout", "Arial Black", serif;
  color: White;
+ text-align: center;
+ font-size: 50px;
 }
 h2 {
- font-family: "Times New Roman", Times, serif;
- color: White;
+  font-family: "namskout", "Arial Black", serif;
+  color: White;
+  font-size: 30px;
 }
 
 h3 {
- font-family: "Times New Roman", Times, serif;
+  font-family: "namskout", Times, serif;
+  color: White;
+  font-size: 25px;
+  // padding-left: 25px;
+  // text-align: center;
+}
+
+h4 {
+ font-family: "namskout", "Arial Black", serif;
  color: White;
+ text-align: center;
+ font-style: oblique;
+ font-size: 32px;
 }
