@@ -8,7 +8,6 @@ class Meal < ApplicationRecord
   def assign_restrictions(meal_id, rest_arr)
    rest_arr.each do |rest|
      id = rest.to_i
-     # byebug
      MealRestriction.create(meal_id: meal_id, restriction_id: id)
    end
  end
