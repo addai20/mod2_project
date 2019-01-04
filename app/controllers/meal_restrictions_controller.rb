@@ -8,16 +8,24 @@ class MealRestrictionsController < ApplicationController
   end
 
   def create
-    @mealrestriction = MealRestriction.new(strong_params)
+    @mealrestriction = MealRestriction.create(:meal_id, :restriction_id)
     @mealrestriction.save
   end
 
-  private
+ #  def assign_restrictions(meal_id, rest_arr)
+ #   rest_arr.each do |rest|
+ #     id = rest.to_i
+ #     # byebug
+ #     MealRestriction.create
+ #   end
+ # end
 
-  def strong_params
-    params.require(:mealrestriction).permit(
-      :meal_id,
-      :restriction_id
-    )
-  end
+  # private
+  #
+  # def strong_params
+  #   params.require(:mealrestriction).permit(
+  #     :meal_id,
+  #     :restriction_id
+  #   )
+  # end
 end

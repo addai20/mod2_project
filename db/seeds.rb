@@ -58,7 +58,6 @@ mr9 = MealRestriction.create(meal_id: 7, restriction_id: 4)
 
 #mp_meals
 mpM1 = MpMeal.create(mp_id: 1, meal_id: 8)
-byebug
 mpM2 = MpMeal.create(mp_id: 2, meal_id: 1)
 mpM3 = MpMeal.create(mp_id: 2, meal_id: 1)
 mpM4 = MpMeal.create(mp_id: 3, meal_id: 8)

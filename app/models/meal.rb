@@ -9,16 +9,7 @@ class Meal < ApplicationRecord
    rest_arr.each do |rest|
      id = rest.to_i
      # byebug
-     MealRestriction.create(strong_params)
+     MealRestriction.create(meal_id: meal_id, restriction_id: id)
    end
- end
- 
- private
-
- def strong_params
-   params.require(:mealrestriction).permit(
-     :meal_id,
-     :restriction_id
-   )
  end
 end

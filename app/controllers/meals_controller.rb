@@ -15,8 +15,6 @@ class MealsController < ApplicationController
     @meal = Meal.create(name: strong_params[:name])
     rest_arr = strong_params[:id].reject! {|e| e.empty?}
     # byebug
-    # @meal.assign_restrictions(@meal.id, rest_arr)
-    # byebug
     @meal.assign_restrictions(@meal.id, rest_arr)
     @meal.save
     # @meal.assign_restrictions(@meal.id, rest_arr)
